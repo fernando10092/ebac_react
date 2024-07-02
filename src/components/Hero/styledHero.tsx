@@ -8,5 +8,26 @@ const Formulario = styled.form`
   position: relative;
   display: flex;
   align-items: center;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0abde3;
+    content: '';
+    opacity: 0.7;
+  }
 `
-export { Formulario }
+const TituloHero = styled.h2`
+  font-family: Gloock, serif;
+  font-size: 48px;
+`
+
+const Div = styled.div`
+  position: relative;
+  color: #eee;
+`
+
+export { Formulario, TituloHero, Div }

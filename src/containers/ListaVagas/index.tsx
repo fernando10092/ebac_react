@@ -101,7 +101,7 @@ const ListaVagas = () => {
   return (
     <div>
       <FormVagas aoPesquisar={(termo: string) => setFiltro(termo)} />
-      <ListdeVagas className={styles.vagas}>
+      <ListdeVagas>
         {vagasFiltradas.map((vag) => (
           <Vaga
             key={vag.id}

@@ -20,6 +20,11 @@ const Botao = styled.button`
   color: #a7727d;
   margin-left: 8px;
   cursor: pointer;
+
+  &:hover {
+    background-color: #2e86de;
+    color: white;
+  }
 `
 
 const Formulario = styled.form`
