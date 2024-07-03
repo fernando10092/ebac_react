@@ -12,12 +12,12 @@ const Teste = styled.button`
 `
 
 const Botao = styled.button`
-  background-color: #192a56;
-  border: 1px solid gray;
+  background-color: var(--cor-principal);
+  border: 1px solid var(--cor-principal);
   height: 40px;
   padding: 0 16px;
   font-size: 18px;
-  color: #a7727d;
+  color: var(--cor-secundaria);
   margin-left: 8px;
   cursor: pointer;
 
@@ -30,15 +30,14 @@ const Botao = styled.button`
 const Formulario = styled.form`
   display: grid;
   grid-template-columns: 1fr auto;
-  background-color: #7f8fa6;
+  background-color: var(--cor-secundaria);
   padding: 32px;
   border-radius: 12px;
-  border-color: #192a56;
   margin-top: 40px;
 `
 const Input = styled.input`
-  background-color: #f5f6fa;
-  border-color: #353b48;
+  padding: 0 16px;
+  outline-color: var(--cor-principal);
 `
 
 export { Teste, Botao, Formulario, Input }

@@ -1,16 +1,16 @@
 import styled from 'styled-components'
 
 const Container = styled.li`
-  border: 1px solid blue);
-  background-color: #192a56;
-  color: gray;
+  border: 1px solid var(--cor-principal);
+  background-color: var(--cor-secundaria);
+  color: var(--cor-principal);
   padding: 16px;
-  transition: all ease .3s;
+  transition: all ease 03s;
   border-radius: 8px;
 
-  &:hover{
-    background-color: #0abde3;
-    color: black;
+  &:hover {
+    background-color: var(--cor-principal);
+    color: var(--cor-secundaria);
   }
 `
 
@@ -19,9 +19,9 @@ const TituloVaga = styled.h3`
   margin-bottom: 16px;
 `
 const VagaLink = styled.a`
-  border-color: azure;
-  background-color: #48dbfb;
-  color: white;
+  border-color: var(--cor-secundaria);
+  background-color: var(--cor-principal);
+  color: var(--cor-secundaria);
   display: inline-block;
   padding: 8px 16px;
   text-decoration: none;
@@ -30,6 +30,16 @@ const VagaLink = styled.a`
   font-size: 14px;
   border-radius: 8px;
   text-align: center;
+
+  &:hover {
+    border-color: var(--cor-principal);
+    background-color: var(--cor-secundaria);
+    color: var(--cor-principal);
+  }
+
+  @media (max-width: 768px) {
+    display: block;
+  }
 `
 
 export { Container, TituloVaga, VagaLink }

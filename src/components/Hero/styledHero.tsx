@@ -3,7 +3,7 @@ import styled from 'styled-components'
 const Formulario = styled.form`
   height: 360px;
   width: 100%;
-  background-image: url('https://cdn.pixabay.com/photo/2014/10/05/19/02/binary-code-475664_1280.jpg');
+  background-image: url('https://cdn.pixabay.com/photo/2018/08/10/15/45/woman-3597101_1280.jpg');
   background-size: cover;
   position: relative;
   display: flex;
@@ -15,14 +15,26 @@ const Formulario = styled.form`
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #0abde3;
+    background-color: var(--cor-principal);
     content: '';
     opacity: 0.7;
+  }
+
+  @media (max-width: 768px) {
+    .form {
+      height: auto;
+      padding: 24px 0;
+    }
   }
 `
 const TituloHero = styled.h2`
   font-family: Gloock, serif;
   font-size: 48px;
+  @media (max-width: 768px) {
+    .heroTitle {
+      font-size: 32px;
+    }
+  }
 `
 
 const Div = styled.div`
