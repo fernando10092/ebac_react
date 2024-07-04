@@ -25,6 +25,10 @@ const Botao = styled.button`
     background-color: #2e86de;
     color: white;
   }
+
+  @media (max-width: 768px) {
+    width: 80%;
+  }
 `
 
 const Formulario = styled.form`
@@ -34,6 +38,12 @@ const Formulario = styled.form`
   padding: 32px;
   border-radius: 12px;
   margin-top: 40px;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    padding-left: 2px;
+    padding-right: 2px;
+  }
 `
 const Input = styled.input`
   padding: 0 16px;
